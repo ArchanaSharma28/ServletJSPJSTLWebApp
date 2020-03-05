@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+	<display-name>UserApp</display-name>
+	<servlet>
+		<servlet-name>UserLoginServlet</servlet-name>
+		<display-name>UserLoginServlet</display-name>
+		<description></description>
+		<servlet-class>com.cogni.UserLoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserFailure</servlet-name>
+		<display-name>UserFailure</display-name>
+		<description></description>
+		<servlet-class>com.cogni.UserFailure</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserRegistrationServlet</servlet-name>
+		<display-name>UserRegistrationServlet</display-name>
+		<description></description>
+		<servlet-class>com.cogni.UserRegistrationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserLoginServlet</servlet-name>
+		<url-pattern>/UserLoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserFailure</servlet-name>
+		<url-pattern>/UserFailure</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserRegistrationServlet</servlet-name>
+		<url-pattern>/UserRegistrationServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>UserLoginForm.html</welcome-file>
+		
+	</welcome-file-list>
+</web-app>

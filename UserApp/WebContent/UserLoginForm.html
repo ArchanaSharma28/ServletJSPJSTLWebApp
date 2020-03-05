@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="UserLoginForm.js"></script>
+<title>Login</title>
+</head>
+<body bgcolor="yellow" >
+<center>
+<h1>LOGIN</h1>
+<br><br>
+<table>
+<form name="login" method="post" action="UserLoginServlet" >
+<tr>
+<td>USER NAME:</td>
+<td> <input type="text" name="username" required></td>
+</tr>
+
+<tr></tr>
+<tr>
+<td>PASSWORD:</td>
+<td> <input type="password" name="password" required></td>
+</tr>
+</table>
+<br><br>
+
+<input type="submit" id="button1" value="submit" onclick="return ValidateUser()">
+<br><br>
+New User? 
+<br>
+Click to Register.
+<br><br>
+<a href="UserRegisteration.html"><input type="button" value="Register" ></a>
+<br>
+<br>
+</form>
+</center>
+</body>
+</html>
